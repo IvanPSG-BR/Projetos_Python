@@ -33,13 +33,14 @@ profissoes = ['Advogado', 'Arquiteto', 'Assistente social', 'Atendente', 'Audito
 temas = [frutas, paises, cores, roupas, partescorpo, profissoes]
 # Listas com as palavras e lista com todas as listas
 
-palavra = palavraoculta = chute = tentativaletra = tentarpalavra = adivinhar_imediatamente = jogardenovo = ''
+palavra = palavraoculta = chute = tentarpalavra = adivinhar_imediatamente = jogardenovo = ''
 # Define todas essas variáveis como strings vazias para serem modificadas mais pra frente
 
-erros = 6
-# Quantidade de vezes que o usuário pode errar a letra
-
 while True:
+    tentativaletra = ''
+    erros = 6
+    # Quantidade de vezes que o usuário pode errar a letra
+
     # Enquanto o loop não for quebrado (interrompido)
     print("""Bem vindo ao jogo da forca. Selecione o tema desejado:
 [ 1 ] Frutas
@@ -72,7 +73,7 @@ while True:
     print('Já escolhi a palavra. Você pode errar a letra até 6 vezes. Boa sorte!')
     print(f'Palavra secreta: {palavraoculta}')
 
-    while palavraoculta != palavra or erros < 7:
+    while palavraoculta != palavra or erros == 0:
         chute = input(f'Você ainda tem {erros} chances. Qual letra você chuta? ')
         """Enquanto a palavra que está oculta for diferente da palavra normal, e o número de erros for menor que 7,
         O código principal do jogo é executado, começando pela pergunta ao usuário de qual letra ele chuta"""
@@ -109,12 +110,12 @@ while True:
         # Mostra o estado atual da palavra misteriosa
 
         tentarpalavra = input('Quer tentar advinhar a palavra? Se acertar, ganhará o jogo imediatamente, porém se errar'
-                              'você perde. [S/N]: ').upper().strip()
+                              ' você perde. [S/N]: ').upper().strip()
         # Pergunta se o usuário quer tentar adivinhar a palavra com o que já sabe.
 
         while True:
             if 'S' in tentarpalavra or 'SIM' in tentarpalavra:
-                adivinhar_imediatamente = input('Sua tentativa: ').title()
+                adivinhar_imediatamente = input('Sua tentativa: ').title().strip()
                 break
             elif 'N' in tentarpalavra or 'NÃO' in tentarpalavra:
                 print(f'Ok, então continue o jogo\n{palavraoculta}')
@@ -126,15 +127,16 @@ while True:
             Se a resposta for não, o jogo continua e o loop termina
             Se a resposta for diferente de sim ou não, o programa pede para digitar uma entrada válida"""
 
-        if adivinhar_imediatamente == palavra or palavraoculta == palavra and erros < 7:
-            print(f'Parabéns, você acertou com {6 - erros} erros! A palavra é {palavra}')
-            break
-        elif adivinhar_imediatamente != palavra and adivinhar_imediatamente != '':
-            print(f'Que pena, não foi dessa vez. A palavra era {palavra}')
-            break
-        elif erros == 0:
-            print(f'Bem, acabaram suas tentativas, a palavra era {palavra}.')
-            break
+        if 'S' in tentarpalavra or 'SIM' in tentarpalavra:
+            if adivinhar_imediatamente == palavra or palavraoculta == palavra and erros < 7:
+                print(f'Parabéns, você acertou com {6 - erros} erros! A palavra é {palavra}')
+                break
+            elif adivinhar_imediatamente != palavra:
+                print(f'Que pena, não foi dessa vez. A palavra era {palavra}')
+                break
+            elif erros == 0:
+                print(f'Bem, acabaram suas tentativas, a palavra era {palavra}.')
+                break
         """Aqui diz se o usuário acertou a palavra (revelando a palavra e informando a quantidade de erros), 
         Se errou a palavra ou se esgotou suas tentativas, também revelando a palavra.
         Nas três possibilidades o loop é interrompido"""
@@ -143,7 +145,6 @@ while True:
     # Pergunta se o usuário quer jogar novamente,
 
     if 'S' in jogardenovo or 'SIM' in jogardenovo:
-        tentativaletra = ''
         sleep(2.0)
         continue
     elif 'N' in jogardenovo or 'NÃO' in jogardenovo:
@@ -153,4 +154,5 @@ while True:
     # Se sim, o jogo reinicia, se não ele é finalizado; e se não for nenhuma das opções o programa pede para repetir
 
 print('Até mais!')
+sleep(5.0)
 # Fim do programa!
