@@ -1,0 +1,56 @@
+([('Jogo_da_Forca.exe',
+   'C:\\Users\\Ivan '
+   'Pedro\\PycharmProjects\\Repositorio_Pycharm\\Projetos_Python\\build\\Jogo_da_Forca\\Jogo_da_Forca.exe',
+   'EXECUTABLE'),
+  ('python311.dll',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\python311.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\VCRUNTIME140.dll',
+   'BINARY'),
+  ('_lzma.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_bz2.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('select.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('_socket.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('unicodedata.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_ssl.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('_hashlib.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_decimal.pyd',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\_decimal.pyd',
+   'EXTENSION'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('base_library.zip',
+   'C:\\Users\\Ivan '
+   'Pedro\\PycharmProjects\\Repositorio_Pycharm\\Projetos_Python\\build\\Jogo_da_Forca\\base_library.zip',
+   'DATA')],)
