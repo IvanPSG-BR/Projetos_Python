@@ -346,10 +346,6 @@
    'C:\\Users\\Ivan '
    'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_compat_pickle.py',
    'PYMODULE'),
-  ('stringprep',
-   'C:\\Users\\Ivan '
-   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\stringprep.py',
-   'PYMODULE'),
   ('getpass',
    'C:\\Users\\Ivan '
    'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\getpass.py',
@@ -405,6 +401,10 @@
   ('_py_abc',
    'C:\\Users\\Ivan '
    'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\_py_abc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\Ivan '
+   'Pedro\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\stringprep.py',
    'PYMODULE'),
   ('subprocess',
    'C:\\Users\\Ivan '
