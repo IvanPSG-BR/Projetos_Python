@@ -36,7 +36,7 @@ while True:
 
     elif opcao == 4:
         num = str(input('Número a ser convertido (apenas números de 1 a 10 e letras de A até F): ')).upper()
-        hexaparadec = int(num, 16) + 1
+        hexaparadec = int(num, 16)
         print('-=-=-=-=-')
         print(hexaparadec)
         print('-=-=-=-=-')
