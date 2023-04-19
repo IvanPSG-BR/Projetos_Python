@@ -96,4 +96,4 @@ def execucao_do_jogo():
             sleep(1.5)
             break
         else:
-            pergunta = input('Não entendi. Digite novamente S para sim ou N para não por favor: ').upper()
+            pergunta = input('Não entendi. Digite a opção novamente. S para sim ou N para não, por favor: ').upper()
