@@ -1,0 +1,7 @@
+.PHONY: build clean
+
+build:
+    pyinstaller meu_programa.py
+
+clean:
+    rm -rf dist build *.egg-info
